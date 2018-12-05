@@ -9,17 +9,18 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    @IBOutlet weak var image_view: UIImageView!
+    @IBOutlet weak var btn_start_o: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    @IBAction func Btn_Start(_ sender: Any) {
+    performSegue(withIdentifier: "GoSecondPage", sender: nil)
+    
     }
-
-
+    
 }
 
