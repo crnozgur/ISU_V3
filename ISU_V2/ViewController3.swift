@@ -11,7 +11,7 @@ import UIKit
 class ViewController3: UIViewController, UITableViewDelegate, UITableViewDataSource {
     @IBOutlet weak var tbl_view: UITableView!
     
-    var dept = ["Bilgi Teknolojileri","İnsan Kaynakları","Lojistik","Satın Alma","Soğutucu"]
+    var dept = ["Information Technologies","Human Resources","Logistics","Purchasing","Cooling"]
     var img = ["IT","HR","LO","PUR","COOL"]
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

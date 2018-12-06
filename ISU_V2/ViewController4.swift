@@ -21,9 +21,9 @@ class ViewController4: UIViewController {
         feeddept.append(txt_deptname.text!)
         feedback.append(txtv_feedback.text)
         
-        let warning = UIAlertController(title:"Kullanıcı Bilgilendirme", message:"Sayın kullanıcımız, geribildiriminiz alınmıştır. İlgili bölüme iletilerek size en kısa sürede dönüş yapılacaktır. Teşekkürler.", preferredStyle:UIAlertControllerStyle.alert)
+        let warning = UIAlertController(title:"User Information", message:"Dear user, we received your feedback. Thank you.", preferredStyle:UIAlertControllerStyle.alert)
         
-        let btn = UIAlertAction(title: "Tamam", style: UIAlertActionStyle.default, handler: nil)
+        let btn = UIAlertAction(title: "Ok", style: UIAlertActionStyle.default, handler: nil)
         
         warning.addAction(btn)
         present(warning, animated: true, completion: nil)
