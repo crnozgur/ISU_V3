@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AD_UNIT_ID_FOR_BANNER_TEST</key>
+	<string>ca-app-pub-3940256099942544/2934735716</string>
+	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
+	<string>ca-app-pub-3940256099942544/4411468910</string>
+	<key>CLIENT_ID</key>
+	<string>535162236263-3guss8jqoit2om64aqauugbcvojbuma3.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.535162236263-3guss8jqoit2om64aqauugbcvojbuma3</string>
+	<key>API_KEY</key>
+	<string>AIzaSyD2NHv1uxyXqsfuTfzjwsEyklkYOW2tiGM</string>
+	<key>GCM_SENDER_ID</key>
+	<string>535162236263</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>ceren.ISU-V2</string>
+	<key>PROJECT_ID</key>
+	<string>bsh-feedback</string>
+	<key>STORAGE_BUCKET</key>
+	<string>bsh-feedback.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<true></true>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<false></false>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:535162236263:ios:aa8c8cc255fd9912</string>
+	<key>DATABASE_URL</key>
+	<string>https://bsh-feedback.firebaseio.com</string>
+</dict>
+</plist>
