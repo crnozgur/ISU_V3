@@ -9,6 +9,7 @@ pod 'Firebase/Auth'
 pod 'Firebase/Storage'
 pod 'Firebase/Database'
 pod 'Firebase/Messaging'
+pod 'IQKeyboardManagerSwift'
 
 
   # Pods for ISU_V2

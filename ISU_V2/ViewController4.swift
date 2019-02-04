@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import FirebaseDatabase
 
 class ViewController4: UIViewController {
     
@@ -16,6 +17,8 @@ class ViewController4: UIViewController {
     var feedback = [""]
     var feeddept = [""]
 
+    var databaseref : DatabaseReference!
+    var databasehandle : DatabaseHandle!
     @IBAction func Btn_Gofirst(_ sender: Any) {
         
         feeddept.append(txt_deptname.text!)
@@ -24,6 +27,11 @@ class ViewController4: UIViewController {
         let warning = UIAlertController(title:"User Information", message:"Dear user, we received your feedback. Thank you.", preferredStyle:UIAlertControllerStyle.alert)
         
         let btn = UIAlertAction(title: "Ok", style: UIAlertActionStyle.default, handler: nil)
+        
+        
+       databaseref = Database.database().reference()
+       databaseref.child("username").childByAutoId().setValue(txtv_feedback.text)
+        
         
         warning.addAction(btn)
         present(warning, animated: true, completion: nil)
