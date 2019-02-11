@@ -57,6 +57,7 @@
 		4E6AC0D980269391FFAC9684 /* Pods_ISU_V2Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ISU_V2Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		510A96AB87044323C0F0DD1F /* Pods_ISU_V2UITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ISU_V2UITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		527A8D9C775CC00A323BBCE5 /* Pods-ISU_V2Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ISU_V2Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ISU_V2Tests/Pods-ISU_V2Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		5F09A49D220DDAB80060EAF0 /* ISU_V2.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ISU_V2.entitlements; sourceTree = "<group>"; };
 		659F872981D1600A8E07EA3E /* Pods-ISU_V2UITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ISU_V2UITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ISU_V2UITests/Pods-ISU_V2UITests.debug.xcconfig"; sourceTree = "<group>"; };
 		955A944F62F7F0A619779EEA /* Pods-ISU_V2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ISU_V2.release.xcconfig"; path = "Pods/Target Support Files/Pods-ISU_V2/Pods-ISU_V2.release.xcconfig"; sourceTree = "<group>"; };
 		B4467444FD194DE3046F45D5 /* Pods_ISU_V2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ISU_V2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -157,6 +158,7 @@
 		B7FDB772216887F000C0CCF7 /* ISU_V2 */ = {
 			isa = PBXGroup;
 			children = (
+				5F09A49D220DDAB80060EAF0 /* ISU_V2.entitlements */,
 				B7FDB773216887F000C0CCF7 /* AppDelegate.swift */,
 				B7FDB775216887F000C0CCF7 /* ViewController.swift */,
 				B7FDB7A121688C4B00C0CCF7 /* ViewController2.swift */,
@@ -267,6 +269,11 @@
 				TargetAttributes = {
 					B7FDB76F216887F000C0CCF7 = {
 						CreatedOnToolsVersion = 9.4.1;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 0;
+							};
+						};
 					};
 					B7FDB783216887F100C0CCF7 = {
 						CreatedOnToolsVersion = 9.4.1;
@@ -616,7 +623,9 @@
 			baseConfigurationReference = DE445385EA63F2C210943EFF /* Pods-ISU_V2.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = H74TTJUBAN;
 				INFOPLIST_FILE = ISU_V2/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -624,6 +633,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "ceren.ISU-V2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -634,7 +644,9 @@
 			baseConfigurationReference = 955A944F62F7F0A619779EEA /* Pods-ISU_V2.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = H74TTJUBAN;
 				INFOPLIST_FILE = ISU_V2/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -642,6 +654,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "ceren.ISU-V2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

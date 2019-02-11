@@ -30,7 +30,7 @@ class ViewController4: UIViewController {
         
         
        databaseref = Database.database().reference()
-       databaseref.child("username").childByAutoId().setValue(txtv_feedback.text)
+       databaseref.child(txt_deptname.text!).childByAutoId().setValue(txtv_feedback.text)
         
         
         warning.addAction(btn)
